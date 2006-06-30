@@ -1,4 +1,6 @@
-Summary:	amaroc - ncurses "frontend" for Amarok
+Summary:	amaroc - ncurses frontend for Amarok
+Summary(de):	amaroc - ncurses Frontend für Amarok
+Summary(pl):	amaroc - frontend ncurses dla Amaroka
 Name:		amaroc
 Version:	0.1
 Release:	0.1
@@ -12,8 +14,16 @@ Requires:	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Amaroc is an ncurses "frontend" for Amarok. It uses DCOP calls, and
-its purpose is to ease control of Amarok over a network.
+Amaroc is an ncurses frontend for Amarok. It uses DCOP calls and its
+purpose is to ease control of Amarok over a network.
+
+%description -l de
+Amaroc ist ein ncurses Frontend für Amarok. Es benutzt DCOP Aufruffe
+und es vereinfacht die Nutzung von Amarok übers Netzwerk.
+
+%description -l pl
+Amaroc jest frontendem ncurses dla Amaroka. U¿ywa wezwañ DCOPu i
+u³atwia u¿ywanie Amaroka poprzez sieæ.
 
 %prep
 %setup -q -n %{name}
