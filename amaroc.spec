@@ -9,8 +9,8 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/amaroc/%{name}-%{version}.tar.bz2
 # Source0-md5:	7191b83e2b66d161a7cd8f463f5181d7
 Requires:	amarok
-Requires:	ncurses
 Requires:	python
+Requires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
