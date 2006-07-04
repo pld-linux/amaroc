@@ -23,7 +23,7 @@ und es vereinfacht die Nutzung von Amarok übers Netzwerk.
 
 %description -l pl
 Amaroc jest frontendem ncurses dla Amaroka. U¿ywa wezwañ DCOPu i
-u³atwia u¿ywanie Amaroka poprzez sieæ.
+u³atwia u¿ywanie Amaroka przez sieæ.
 
 %prep
 %setup -q
