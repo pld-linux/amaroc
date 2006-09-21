@@ -1,0 +1,31 @@
+--- amaroc.py.orig	2006-08-02 08:41:39.000000000 +0200
++++ amaroc.py	2006-09-21 17:58:20.000000000 +0200
+@@ -235,7 +235,11 @@
+ curses.noecho()
+ curses.cbreak()
+ stdscr.keypad(1)
+-curses.curs_set(0)
++try:
++    curses.curs_set(0)
++except:
++    pass
++
+ whoami = commands.getoutput('whoami')
+ 
+ y, x = stdscr.getmaxyx()
+--- amaroc.py.orig	2006-09-21 18:02:50.000000000 +0200
++++ amaroc.py	2006-09-21 18:03:06.000000000 +0200
+@@ -26,7 +26,12 @@
+ # Functions
+ ############
+ def endit():
+-	curses.curs_set(1); curses.nocbreak(); stdscr.keypad(0); curses.echo()
++	try:
++	    curses.curs_set(1); 
++	except:
++	    pass
++	
++	curses.nocbreak(); stdscr.keypad(0); curses.echo()
+ 	curses.endwin()
+ 
+ def ak_basic(doit, return_status=0):

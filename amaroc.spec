@@ -2,12 +2,13 @@ Summary:	amaroc - ncurses frontend for Amarok
 Summary(de):	amaroc - ncurses Frontend für Amarok
 Summary(pl):	amaroc - frontend ncurses dla Amaroka
 Name:		amaroc
-Version:	0.2
-Release:	0.1
+Version:	0.3
+Release:	1
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/amaroc/%{name}-%{version}.tar.bz2
-# Source0-md5:	7191b83e2b66d161a7cd8f463f5181d7
+# Source0-md5:	38308e04b2bd0f7df94d19f2455b70df
+Patch0:		%{name}-curses.patch
 Requires:	amarok
 Requires:	python
 Requires:	python-modules
@@ -27,6 +28,7 @@ u³atwia u¿ywanie Amaroka przez sieæ.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
