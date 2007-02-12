@@ -1,6 +1,6 @@
 Summary:	amaroc - ncurses frontend for Amarok
-Summary(de.UTF-8):   amaroc - ncurses Frontend für Amarok
-Summary(pl.UTF-8):   amaroc - frontend ncurses dla Amaroka
+Summary(de.UTF-8):	amaroc - ncurses Frontend für Amarok
+Summary(pl.UTF-8):	amaroc - frontend ncurses dla Amaroka
 Name:		amaroc
 Version:	0.3
 Release:	1
