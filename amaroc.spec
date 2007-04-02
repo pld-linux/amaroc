@@ -19,11 +19,11 @@ Amaroc is an ncurses frontend for Amarok. It uses DCOP calls and its
 purpose is to ease control of Amarok over a network.
 
 %description -l de.UTF-8
-Amaroc ist ein ncurses Frontend für Amarok. Es benutzt DCOP Aufrffe
+Amaroc ist ein ncurses Frontend für Amarok. Es benutzt DCOP Aufrufe
 und es vereinfacht die Nutzung von Amarok übers Netzwerk.
 
 %description -l pl.UTF-8
-Amaroc jest frontendem ncurses dla Amaroka. Używa wezwań DCOPu i
+Amaroc jest frontendem ncurses dla Amaroka. Używa wywołan DCOP i
 ułatwia używanie Amaroka przez sieć.
 
 %prep
