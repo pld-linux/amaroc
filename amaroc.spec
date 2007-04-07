@@ -9,6 +9,7 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/amaroc/%{name}-%{version}.tar.bz2
 # Source0-md5:	38308e04b2bd0f7df94d19f2455b70df
 Patch0:		%{name}-curses.patch
+URL:		http://sourceforge.net/projects/amaroc/
 Requires:	amarok
 Requires:	python
 Requires:	python-modules
