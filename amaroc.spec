@@ -14,6 +14,7 @@ BuildRequires:	sed >= 4.0
 Requires:	amarok
 Requires:	python
 Requires:	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
