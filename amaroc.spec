@@ -3,7 +3,7 @@ Summary(de.UTF-8):	amaroc - ncurses Frontend für Amarok
 Summary(pl.UTF-8):	amaroc - frontend ncurses dla Amaroka
 Name:		amaroc
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/amaroc/%{name}-%{version}.tar.bz2
