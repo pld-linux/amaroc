@@ -3,12 +3,13 @@ Summary(de.UTF-8):	amaroc - ncurses Frontend für Amarok
 Summary(pl.UTF-8):	amaroc - frontend ncurses dla Amaroka
 Name:		amaroc
 Version:	0.3
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/amaroc/%{name}-%{version}.tar.bz2
 # Source0-md5:	38308e04b2bd0f7df94d19f2455b70df
 Patch0:		%{name}-curses.patch
+Patch1:		%{name}-keys.patch
 URL:		http://sourceforge.net/projects/amaroc/
 BuildRequires:	sed >= 4.0
 Requires:	amarok
@@ -32,6 +33,7 @@ ułatwia używanie Amaroka przez sieć.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 %{__sed} -i -e '1s,^#!.*python,#!%{__python},' amaroc.py
 
 %install
