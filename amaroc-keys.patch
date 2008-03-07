@@ -1,0 +1,20 @@
+--- /usr/bin/amaroc~	2008-03-07 10:22:39.000000000 +0200
++++ /usr/bin/amaroc	2008-03-07 10:22:41.462309113 +0200
+@@ -292,7 +292,7 @@
+ 	scroll_list(the_offset)
+ 	scroll.move(cur_y, 1)
+ 	c = stdscr.getch()
+-	if c == ord('x'): err=0; break
++	if c == ord('x') or c == ord('q'): err=0; break
+ 	elif c == ord('h'):
+ 		displayhelp()
+ 	elif c == ord('d'): 
+@@ -307,7 +307,7 @@
+ 			err = 1
+ 			break
+ 		statuswin('Previous track')
+-	elif c == ord(' '):
++	elif c == ord(' ') or c == 10:
+ 		ret = playindex(str(the_offset+cur_y))
+ 		if ret == 0:
+ 			err =  1
