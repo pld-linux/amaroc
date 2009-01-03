@@ -1,14 +1,16 @@
---- amaroc.py~	2008-03-07 10:22:39.000000000 +0200
-+++ amaroc.py	2008-03-07 10:22:41.462309113 +0200
-@@ -292,7 +292,7 @@
+--- amaroc.py	2008-03-07 10:22:41.462309113 +0200
++++ amaroc.py	2009-01-03 16:46:54.718550196 +0200
+@@ -292,8 +292,8 @@
  	scroll_list(the_offset)
  	scroll.move(cur_y, 1)
  	c = stdscr.getch()
 -	if c == ord('x'): err=0; break
+-	elif c == ord('h'):
 +	if c == ord('x') or c == ord('q'): err=0; break
- 	elif c == ord('h'):
++	elif c == ord('h') or c == ord('?'):
  		displayhelp()
  	elif c == ord('d'): 
+ 		ret = ak_basic('next')
 @@ -307,7 +307,7 @@
  			err = 1
  			break
