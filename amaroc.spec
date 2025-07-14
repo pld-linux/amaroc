@@ -32,8 +32,8 @@ ułatwia używanie Amaroka przez sieć.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
+%patch -P0 -p0
+%patch -P1 -p0
 %{__sed} -i -e '1s,^#!.*python,#!%{__python},' amaroc.py
 
 %install
